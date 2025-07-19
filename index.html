@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>えす隊クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>えす隊クイズ！<br class="br-sp">ランダムで10問出てくるよ</h1>
+  </header>
+
+  <main class="container">
+    <div id="js-question" class="question-box">
+      <!-- JavaScriptで問題文が入る -->
+    </div>
+
+    <div class="answer-buttons">
+      <button class="btn">選択肢1</button>
+      <button class="btn">選択肢2</button>
+      <button class="btn">選択肢3</button>
+      <button class="btn">選択肢4</button>
+    </div>
+
+    <p id="result" class="result-text"></p>
+
+    <div class="navigation">
+      <button id="next" class="btn">次へ</button>
+      <button id="retry" class="btn btn-outline">もう一度やってみる</button>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

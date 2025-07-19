@@ -1,0 +1,109 @@
+﻿/* 基本全体の中央寄せ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #fff8e1;
+  text-align: center;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #ffa500;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* 中央寄せ用の全体ラッパー */
+.container {
+  padding: 30px 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 問題文の表示 */
+.question-box {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  min-height: 2em;
+}
+
+/* 回答ボタン */
+.answer-buttons {
+  display: flex;
+  justify-content: center;
+  /* 中央寄せ */
+  gap: 15px;
+  /* ボタンの間のスペース */
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #ffb347;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: #ff9933;
+  transform: scale(1.05);
+}
+
+/* 「もう一度やってみる」用のスタイル */
+.btn-outline {
+  background-color: transparent;
+  color: #ff9933;
+  border: 2px solid #ff9933;
+  margin-left: 10px;
+}
+
+.btn-outline:hover {
+  background-color: #ff9933;
+  color: white;
+}
+
+/* 結果表示 */
+.result-text {
+  font-weight: bold;
+  font-size: 1.1rem;
+  min-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* ナビゲーションボタン（次へ・リトライ） */
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.br-sp {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .br-sp {
+    display: block;
+  }
+
+  .answer-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .answer-buttons .btn {
+    width: 80vw;  /* 画面幅の80% */
+    max-width: 300px; /* 最大幅を設定すると見栄えが良い */
+  }
+}
